@@ -1,5 +1,5 @@
 .card {
-    margin:auto;
+    margin: auto;
     width: 720px;
     border-radius: 20px;
     border-style: solid;
@@ -8,12 +8,12 @@
     transition: 1s;
 }
 
-.cardcontent{
-    margin:auto;
+.cardcontent {
+    margin: auto;
     text-align: justify;
     width: 690px;
-
 }
+
 .card:hover {
     border-color: whitesmoke;
 }
@@ -24,6 +24,8 @@ body {
     color: rgb(253, 253, 253);
     background-color: rgb(8, 8, 8);
 }
+
+
 
 .customCheckBoxHolder {
     margin: 0 auto;
@@ -111,3 +113,4 @@ body {
 .customCheckBoxWrapper .customCheckBox:hover .inner {
     transform: translateY(-2px);
 }
+
