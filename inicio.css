@@ -4,9 +4,9 @@ body {
 }
 
 .customCheckBoxHolder {
-  margin: 0 auto;
+  margin: auto;
   display: flex;
-  position: absolute;
+  position: center;
   align-self: center;
   align-content: center;
   display: flex;
