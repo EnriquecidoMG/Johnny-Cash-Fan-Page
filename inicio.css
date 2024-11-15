@@ -131,9 +131,16 @@ table img:hover {
   color: rgb(30, 30, 30);
 }
 
+.footerstyled{
+  color: rgb(69, 69, 69);
+  margin: auto;
+  width: 500px;
+  font-family: "Poppins", sans-serif;
+}
+
 .btn-shine {
   position:relative;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, 50%);
   padding: 12px 48px;
   color: #fff;
   background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
