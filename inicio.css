@@ -121,11 +121,10 @@ header{
 }
 
 table {
-  column-width: 300px;
   font-size: 18px;
   text-align: justify;
   vertical-align: middle;
-  width: 300px;
+  width: 200px;
   height: 551px;
   margin-left: auto;
   margin-right: auto;
