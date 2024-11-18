@@ -1,6 +1,29 @@
+@font-face {
+  font-family: Arkipelago;
+  src: url(Fonts/Arkipelago.otf) format(truetype);
+}
+
+@font-face {
+  font-family: Redemption;
+  src: url(Fonts/Redemption.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: Halogen;
+  src: url(Fonts/Halogen.ttf) format(truetype);
+}
+
 body {
   color: rgb(253, 253, 253);
   background-color: rgb(8, 8, 8);
+  font-family: Halogen;
+}
+
+header{
+  font-family: Redemption;
+  align-self: center;
+  text-align: center;
+  font-size: 35px;
 }
 
 .customCheckBoxHolder {
@@ -33,6 +56,7 @@ body {
   outline: none;
   justify-content: center;
   min-width: 55px;
+  font-family: Arkipelago;
 }
 
 .customCheckBox:hover {
@@ -42,8 +66,9 @@ body {
 }
 
 .customCheckBox .inner {
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 21px;
+  font-weight: normal;
+  /*font-weight: 900;*/
   pointer-events: none;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 300ms;
@@ -96,21 +121,34 @@ body {
 }
 
 table {
-  text-align: left;
+  column-width: 300px;
+  font-size: 18px;
+  text-align: justify;
+  vertical-align: middle;
   width: 300px;
   height: 551px;
   margin-left: auto;
   margin-right: auto;
   border: 0;
+}
 
+table p{
+  width: 100px;
 }
 
 table img {
+  vertical-align: middle;
+  align-self: center;
   border-radius: 25px;
   border-style: solid;
   border-color: rgb(8, 8, 8);
   border-width: 5px;
   transition: 1s;
+  height: 225px;
+}
+
+table a{
+  vertical-align: top;
 }
 
 table img:hover {
@@ -127,11 +165,11 @@ table img:hover {
   }
 }
 
-.footerstyle{ 
+.footerstyle {
   color: rgb(30, 30, 30);
 }
 
-.footerstyled{
+.footerstyled {
   color: rgb(69, 69, 69);
   margin: auto;
   width: 500px;
@@ -139,7 +177,7 @@ table img:hover {
 }
 
 .btn-shine {
-  position:relative;
+  position: relative;
   transform: translate(50%, 50%);
   padding: 12px 48px;
   color: #fff;
@@ -156,46 +194,58 @@ table img:hover {
   white-space: nowrap;
   font-family: "Poppins", sans-serif;
 }
+
 @-moz-keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 180px;
   }
+
   100% {
     background-position: 180px;
   }
 }
+
 @-webkit-keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 180px;
   }
+
   100% {
     background-position: 180px;
   }
 }
+
 @-o-keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 180px;
   }
+
   100% {
     background-position: 180px;
   }
 }
+
 @keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 180px;
   }
+
   100% {
     background-position: 180px;
   }
