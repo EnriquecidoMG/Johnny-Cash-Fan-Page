@@ -85,12 +85,21 @@ body {
 
 .articlecontent{
   margin: 10px;
+  transition: 1s;
+}
+.articlecontent:hover{
+  transform: scale(1);
 }
 
 article{
   border-radius: 10px;
   box-shadow: 10px;
   background-color: rgb(23, 23, 23);
+  transition: 1s;
+}
+
+article:hover{
+  transform: scale(1.1);
 }
 
 .customCheckBoxHolder {
