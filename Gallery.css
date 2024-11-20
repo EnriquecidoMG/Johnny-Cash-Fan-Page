@@ -27,32 +27,24 @@ header {
 }
 
 
-
-.colleft {
-    text-align: right;
+ul{
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
 }
 
-.card {
-    margin: auto;
-    width: 720px;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 7px;
-    border-color: rgb(8, 8, 8);
-    transition: 1s;
+li{
+  padding-top: 20px;
 }
 
-.cardcontent {
-    margin: auto;
-    text-align: justify;
-    width: 690px;
+li::marker{
+  visibility: hidden;
+  font-weight: bold;
 }
-
-.card:hover {
-    border-color: whitesmoke;
-}
-
-
 
 
 .articlecontent{
