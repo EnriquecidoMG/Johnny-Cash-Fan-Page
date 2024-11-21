@@ -13,6 +13,11 @@
   src: url(Fonts/Halogen.ttf) format(truetype);
 }
 
+@font-face {
+  font-family: Arrows;
+  src: url(Fonts/Arrows.ttf) format(truetype);
+}
+
 body {
   color: rgb(253, 253, 253);
   background-color: rgb(8, 8, 8);
@@ -294,4 +299,70 @@ table img:hover {
   100% {
     background-position: 180px;
   }
+}
+
+
+.articlebox{
+  width: 400px;
+  align-content: center;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article{
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 20px;
+  border-color: #939393;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #939393;
+}
+
+.albumbox{
+  width: fit-content;
+  margin: 10px;
+}
+
+.albumbox p{
+  margin-top: 10px;
+}
+
+.albuminfo{
+  position: relative;
+  margin-top: 20px;
+}
+
+.imagen{
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #f7f7f7;
+  border-width: 6px;
+  width: 100px;
+  height: 100px;
+}
+
+.imagen img{
+  border-radius: 18px;
+  width: 100px;
+  height: 100px;
+}
+
+
+/*------ Settings ------*/
+.play-button {
+  font-family: Arrows;
+  border-radius: 20px;
+  border-width: 5px;
+  border-color: #222222;
+  background-color: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  font-size: 70px;
+  width: 75px;
+  height: 75px;
+  text
 }
