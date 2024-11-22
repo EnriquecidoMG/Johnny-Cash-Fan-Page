@@ -303,7 +303,7 @@ table img:hover {
 
 
 .articlebox{
-  width: 400px;
+  width: auto;
   align-content: center;
   align-items: center;
 
@@ -311,10 +311,16 @@ table img:hover {
   margin-right: auto;
 }
 
+.articles_form{
+  grid-auto-rows: auto;
+
+}
+
 article{
   margin-left: auto;
   margin-right: auto;
-  border-width: 20px;
+  border-width: 10px;
+  border-style: solid;
   border-color: #939393;
   width: 300px;
   height: auto;
@@ -323,6 +329,7 @@ article{
 }
 
 .albumbox{
+  border: ;
   width: fit-content;
   margin: 10px;
 }
@@ -334,6 +341,10 @@ article{
 .albuminfo{
   position: relative;
   margin-top: 20px;
+}
+
+.album-name{
+  margin-top: 10px;
 }
 
 .imagen{
