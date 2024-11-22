@@ -18,6 +18,11 @@
   src: url(Fonts/Arrows.ttf) format(truetype);
 }
 
+@font-face {
+  font-family: LEMONMILK;
+  src: url(Fonts/LEMONMILK-Bold.otf) format(truetype);
+}
+
 body {
   color: rgb(253, 253, 253);
   background-color: rgb(8, 8, 8);
@@ -320,16 +325,16 @@ article{
   margin-left: auto;
   margin-right: auto;
   border-width: 10px;
+  margin-bottom: 20px;
   border-style: solid;
   border-color: #939393;
   width: 300px;
-  height: auto;
+  height: 175px;
   border-radius: 20px;
   background-color: #939393;
 }
 
 .albumbox{
-  border: ;
   width: fit-content;
   margin: 10px;
 }
@@ -339,12 +344,19 @@ article{
 }
 
 .albuminfo{
+  font-family: LEMONMILK;
   position: relative;
   margin-top: 20px;
 }
 
 .album-name{
+  font-family: LEMONMILK;
   margin-top: 10px;
+}
+
+.fecha{
+  font-family: LEMONMILK;
+  font-size: 12px;
 }
 
 .imagen{
@@ -365,6 +377,9 @@ article{
 
 /*------ Settings ------*/
 .play-button {
+  position: relative;
+  bottom: 95px;
+  left: 150px;
   font-family: Arrows;
   border-radius: 20px;
   border-width: 5px;
