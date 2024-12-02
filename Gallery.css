@@ -325,7 +325,7 @@ h1 {
       filter: grayscale(0);
     }
     &:hover {
-      border-color: coral;
+      border-color: rgb(248, 255, 154);
     }
     img {
       width: 100%;
