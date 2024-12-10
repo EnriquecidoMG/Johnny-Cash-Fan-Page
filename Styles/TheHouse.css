@@ -1,0 +1,455 @@
+@font-face {
+    font-family: Arkipelago;
+    src: url(../Resources/Fonts/Arkipelago.otf) format(truetype);
+  }
+  
+  @font-face {
+    font-family: Redemption;
+    src: url(../Resources/Fonts/Redemption.ttf) format(truetype);
+  }
+  
+  @font-face {
+    font-family: Halogen;
+    src: url(../Resources/Fonts/Blue_Highway_Rg.otf) format(truetype);
+  }
+  
+  body {
+    color: rgb(253, 253, 253);
+    background-color: rgb(8, 8, 8);
+    font-family: Halogen;
+  }
+  
+  header{
+    font-family: Redemption;
+    align-self: center;
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .customCheckBoxHolder {
+    margin: auto;
+    display: flex;
+    position: center;
+    align-self: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .customCheckBox {
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    padding: 2px 8px;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 0px;
+    color: rgba(255, 255, 255, 0.7);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: color, background-color, box-shadow;
+    display: flex;
+    height: 32px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+    outline: none;
+    justify-content: center;
+    min-width: 55px;
+    font-family: Arkipelago;
+  }
+  
+  .customCheckBox:hover {
+    background-color: #2c2c2c;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+  }
+  
+  .customCheckBox .inner {
+    font-size: 21px;
+    font-weight: normal;
+    /*font-weight: 900;*/
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: transform;
+    transform: translateY(0px);
+  }
+  
+  .customCheckBox:hover .inner {
+    transform: translateY(-2px);
+  }
+  
+  .customCheckBoxWrapper:first-of-type .customCheckBox {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: 0px;
+  }
+  
+  .customCheckBoxWrapper:last-of-type .customCheckBox {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 0px;
+  }
+  
+  .customCheckBoxInput {
+    display: none;
+  }
+  
+  .customCheckBoxInput:checked+.customCheckBoxWrapper .customCheckBox {
+    background-color: #2d6737;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+  }
+  
+  .customCheckBoxInput:checked+.customCheckBoxWrapper .customCheckBox .inner {
+    transform: translateY(-2px);
+  }
+  
+  .customCheckBoxInput:checked+.customCheckBoxWrapper .customCheckBox:hover {
+    background-color: #34723f;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.15) 0px 3px 6px 2px;
+  }
+  
+  .customCheckBoxWrapper .customCheckBox:hover .inner {
+    transform: translateY(-2px);
+  }
+  
+  
+  .buquete {
+    text-align: center
+  }
+  
+  table {
+    font-size: 18px;
+    text-align: left;
+    vertical-align: middle;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    border-spacing: 15px;
+    border: 0;
+  }
+  
+  table p{
+    width: 100px;
+  }
+  
+  tbody{
+    font-size: 18px;
+    text-align: left;
+    vertical-align: middle;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    border-spacing: 15px;
+    border: 0;
+  }
+  
+  .colleft{
+    text-align: right;
+  }
+  
+  /*
+  table img {
+    vertical-align: middle;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(8, 8, 8);
+    border-width: 5px;
+    transition: 1s;
+    height: 225px;
+  }
+  */
+  
+  table a{
+    vertical-align: top;
+  }
+  
+  /*
+  table img:hover {
+    border-color: white;
+  }
+    */
+  
+  .item {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    border-color: rgb(8, 8, 8);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+  }
+  
+  .item:hover{
+    border-color: rgb(207, 207, 207)
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .item img:hover {
+    transform: scale(1.2);
+  }
+  
+  @keyframes towhiteborder {
+    from {
+      border-color: rgb(8, 8, 8);
+    }
+  
+    to {
+      border-color: white;
+    }
+  }
+  
+  .footerstyle {
+    color: rgb(30, 30, 30);
+  }
+  
+  .footerstyled {
+    color: rgb(69, 69, 69);
+    margin: auto;
+    width: 500px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .btn-shine {
+    position: relative;
+    transform: translate(50%, 50%);
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  @-moz-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+  
+    60% {
+      background-position: 180px;
+    }
+  
+    100% {
+      background-position: 180px;
+    }
+  }
+  
+  @-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+  
+    60% {
+      background-position: 180px;
+    }
+  
+    100% {
+      background-position: 180px;
+    }
+  }
+  
+  @-o-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+  
+    60% {
+      background-position: 180px;
+    }
+  
+    100% {
+      background-position: 180px;
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+  
+    60% {
+      background-position: 180px;
+    }
+  
+    100% {
+      background-position: 180px;
+    }
+  }
+  
+  body {
+    font-family: Halogen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+  }
+  h1 {
+    color: rgb(255, 255, 255);
+  }
+  .grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    div {
+      width: 150px;
+      margin: 0 1.5rem 1.5rem 0;
+      display: inline-block;
+      width: 100%;
+      border: solid 2px black;
+      padding: 5px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+      &:hover img {
+        filter: grayscale(0);
+      }
+      &:hover {
+        border-color: rgb(248, 255, 154);
+      }
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: 5px;
+        transition: all .25s ease-in-out;
+      }
+      p {
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+  }
+  
+  .button-suport {
+    font: inherit;
+    background-color: #2a2a2a;
+    border: 0;
+    color: #e0e0e0;
+    border-radius: 0.5em;
+    font-size: 1.35rem;
+    padding: 0.375em 1em;
+    font-weight: 600;
+    text-shadow: 0 0.0625em 0 #000;
+    box-shadow:
+      inset 0 0.0625em 0 0 #3a3a3a,
+      0 0.0625em 0 0 #252525,
+      0 0.125em 0 0 #202020,
+      0 0.25em 0 0 #1c1c1c,
+      0 0.3125em 0 0 #181818,
+      0 0.375em 0 0 #141414,
+      0 0.425em 0 0 #101010,
+      0 0.425em 0.5em 0 #0a0a0a;
+    transition: 0.15s ease;
+    cursor: pointer;
+  }
+  
+  .button-suport:active {
+    translate: 0 0.225em;
+    box-shadow:
+      inset 0 0.03em 0 0 #3a3a3a,
+      0 0.03em 0 0 #252525,
+      0 0.0625em 0 0 #202020,
+      0 0.125em 0 0 #1c1c1c,
+      0 0.125em 0 0 #181818,
+      0 0.2em 0 0 #141414,
+      0 0.225em 0 0 #101010,
+      0 0.225em 0.375em 0 #0a0a0a;
+  }
+
+
+  .formulary-totalbox{
+    font-family: Halogen;
+  }
+
+
+  .form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 20px;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #ffffff, #5a5a5a);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+  }
+  
+
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+  textarea {
+    width: 400px;
+    height: 150px;
+    resize: none;
+}

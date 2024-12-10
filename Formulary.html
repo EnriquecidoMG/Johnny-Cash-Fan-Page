@@ -1,0 +1,85 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Johnny Cash Fan Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles/Formulary.css">
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <meta name="M. Enrique Medina Gomariz" content="Johnny Cash Fan Page">
+    <link rel="icon" type="image/x-icon" href="Resources/Total/favicon.ico">
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div><img style="width: 298px; height: 223px;" alt="Johnny Cash singing"
+                src="Resources/Total/Portada_web_removedbg.png"><br>
+        </div>
+        <div>Johnny Cash Fan Page
+            <br>
+            <br>
+        </div>
+    </header>
+    <main>
+        <div style="text-align: left;">
+            <p align="left"><b><button href="" class="button-suport" style="scale: 0.7;"
+                        onclick="document.location='Gallery.html'">Volver</b></button>
+            </p>
+        </div>
+        <div class="formulary-totalbox">
+            <h2>Formulario para Enviar Información sobre Johnny Cash</h2>
+            <p>Por favor, completa el siguiente formulario para enviar tus recursos (información o imágenes) sobre
+                Johnny Cash a nuestra página web.</p>
+
+            <form action="https://www.ejemplo.org/recibir-recurso" method="POST" enctype="multipart/form-data">
+                <br>
+                <div class="form__group field">
+                    <label class="form__label" for="nombre">Tu Nombre:</label><br>
+                    <input class="form__field" type="text" id="nombre" name="nombre" required><br><br>
+                </div>
+                <br>
+                <div class="form__group field">
+                    <label class="form__label" for="email">Tu Correo Electrónico:</label><br>
+                    <input class="form__field" type="email" id="email" name="email" required><br><br>
+                </div>
+                <br>
+                <div class="form__group field">
+                    <label class="form__label" for="titulo">Título del Recurso:</label><br>
+                    <input class="form__field" type="text" id="titulo" name="titulo" required><br><br>
+                </div>
+                <br>
+                <div class="form__group field">
+                    <label class="form__label" for="descripcion">Descripción del Recurso:</label><br>
+                    <textarea class="form__field" id="descripcion" name="descripcion" rows="4" cols="50"
+                        placeholder="Proporciona detalles sobre el recurso (puede ser texto relacionado con Johnny Cash, o información sobre una imagen)"
+                        required></textarea><br><br>
+                </div>
+                <br>
+                <div class="form__group field">
+                    <label class="form__label" for="archivo">Adjuntar Archivo:</label><br>
+                </div>
+                <br>
+                <input type="file" id="archivo" name="archivo" accept=".jpg, .jpeg, .png, .gif, .pdf, .docx"
+                    required><br><br><br><br>
+        </div>
+
+        <input class="button-suport" style="scale: 0.8;" type="submit" value="Enviar Recurso">
+
+        </form>
+        <br><br>
+        <p><i>Gracias por contribuir a nuestra recopilación sobre Johnny Cash.</i></p>
+        <br><br>
+
+
+    </main>
+
+
+</body>
